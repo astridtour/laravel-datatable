@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
+    $users = \App\User::all();
+    dump($users);
     return view('welcome');
 });
